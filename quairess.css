@@ -29,7 +29,10 @@
     margin-bottom: 15px;
   }
   .filter-list {
-    width: 42%;
+    width: 55%;
+  }
+  .first,.second{
+    font-size: 12px;
   }
 }
 @media (max-width: 430px) {
@@ -39,5 +42,8 @@
   }
   .country-det {
     height: 23vh;
+  }
+  .filter-list {
+    width: 60%;
   }
 }

@@ -76,6 +76,7 @@ function allCountries(data) {
 function fliter(data) {
   popUp.addEventListener("change", () => {
     if (popUp.value == "All" || popUp.value == "") {
+      countryContainer.innerHTML = ""
       allCountries(data);
     } else {
       countryContainer.innerHTML = "";
