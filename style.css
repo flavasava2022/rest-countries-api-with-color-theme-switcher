@@ -1,0 +1,234 @@
+:root {
+  --darkblue: hsl(209, 23%, 22%);
+  --verydarkbluetext: hsl(200, 15%, 8%);
+  --verydarkblue: hsl(200, 15%, 17%);
+  --darkgray: hsl(0, 0%, 52%);
+  --verylightgray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  background-color: var(--verylightgray);
+  /* overflow: hidden; */
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+footer {
+  position: fixed;
+  background-color: var(--white);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  box-shadow: 1px -10px 1px 10px var(--darkgray);
+}
+footer .fa-moon {
+  margin-right: 10px;
+}
+.dark-mode {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  height: auto;
+  margin-left: 5%;
+  padding-top: 8vh;
+  background-color: var(--darkblue);
+  width: 90%;
+  background-color: var(--verylightgray);
+}
+.main-bar {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar {
+  width: 30%;
+  display: flex;
+  padding: 5px 1%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 3px 0px var(--darkgray);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border-color: transparent;
+  color: var(--darkgray);
+}
+.search-bar input:focus {
+  outline-width: 0;
+}
+.filter-list {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-list input {
+  width: 100%;
+  padding: 5px;
+  border-color: transparent;
+  box-shadow: 0px 0px 3px 0px var(--darkgray);
+  border-radius: 4px;
+  color: var(--darkgray);
+}
+.filter-list input:focus {
+  outline-width: 0;
+}
+.fa-magnifying-glass {
+  margin-right: 5px;
+  color: var(--darkgray);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  gap: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.country {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 3px 0px var(--darkgray);
+  height: 42vh;
+}
+.country-info {
+  padding: 15px;
+}
+.country-info p {
+  margin-top: 2px;
+}
+.country-info span {
+  margin-right: 4px;
+  color: var(--darkgray);
+  font-size: 12px;
+  text-align: center;
+}
+.attribution {
+  /* padding-top: 20vh; */
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.country-details {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background-color: var(--verylightgray);
+  display: none;
+  /* overflow: hidden; */
+}
+.footer {
+  background-color: var(--white);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  box-shadow: 1px -10px 1px 10px var(--darkgray);
+}
+.back {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5vh;
+}
+.country-det {
+  margin-top: 5vh;
+  width: 90%;
+  height: 42vh;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.country-det img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+.choosed-country {
+  margin-left: 2%;
+  width: 50%;
+  padding: 2px;
+  flex: 1;
+  display: grid;
+  grid-template-rows: 98% 11%;
+  gap: 5%;
+}
+.con-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.country-name {
+  width: 100%;
+}
+.first,
+.second {
+  width: 45%;
+}
+.con-border span {
+  padding: 0 5px;
+  margin-left: 5px;
+  box-shadow: 0px 1px 3px 1px var(--darkgray);
+}
+.back-btn {
+  display: block;
+  padding: 10px 10px;
+  margin-left: 5px;
+  width: 60px;
+  box-shadow: 0px 1px 3px 1px var(--darkgray);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+.dark-mode-main {
+  color: var(--white);
+  background-color: var(--verydarkblue);
+}
+.dark-mode-element {
+  color: var(--white);
+  background-color: var(--darkblue);
+}
+.dark-mode-element-text {
+  color: var(--verydarkbluetext);
+}
+
+.popup-show {
+  display: block;
+}
+.overflow {
+  overflow: hidden;
+}

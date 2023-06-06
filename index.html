@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quairess.css" />
+    <title>REST Countries API</title>
+  </head>
+  <body>
+    <div class="country-details">
+      <div class="footer">
+        <h4>where in the world?</h4>
+      </div>
+      <div class="back">
+        <button class="back-btn">back</button>
+      </div>
+      <div class="country-cont"></div>
+    </div>
+    <footer>
+      <h4>where in the world?</h4>
+      <div class="dark-mode">
+        <i class="fa-regular fa-moon"></i>
+        <p>dark mode</p>
+      </div>
+    </footer>
+    <main>
+      <div class="main-bar">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search For a Country..." />
+        </div>
+        <div class="filter-list">
+          <input
+            class="pop-up"
+            list="regions"
+            placeholder="Filter Countries By Region..."
+          />
+          <datalist id="regions">
+            <option value="All"></option>
+            <option value="Asia"></option>
+            <option value="Americas"></option>
+            <option value="Africa"></option>
+            <option value="Europe"></option>
+            <option value="Oceania"></option>
+          </datalist>
+        </div>
+      </div>
+      <div class="container"></div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7acf7568c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
